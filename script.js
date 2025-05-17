@@ -6,7 +6,7 @@ this.model = model;
 
 
 Car.prototype.getMakeModel=function(){
-	return this.make+""+this.model;
+	return this.make+" "+this.model;
 }
 
 function SportsCar(make, model, topSpeed) {
@@ -19,7 +19,9 @@ SportsCar.prototype.constructor = SportsCar;
 SportsCar.prototype.getTopSpeed = function(){
 	return this.topSpeed;
 }
-
+const car = new SportsCar("Ferrari", "Testarossa", 200);
+const car = new SportsCar("Ferrari", "Testarossa", 200);
+console.log(car.getTopSpeed()); // Output: 200
 
 // Do not change the code below
 window.Car = Car;
